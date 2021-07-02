@@ -40,7 +40,13 @@ public class LinkedListMain<T> {
 		System.out.println("\nDelete First element");
 		linkedListService.popFirst();
 		linkedListService.display();
+		linkedListService.clearList();
 		
-
+		System.out.println("\nDelete Last element");
+		linkedListService.append(56);
+		linkedListService.append(30);
+		linkedListService.append(70);
+		linkedListService.popLast();
+		linkedListService.display();
 	}
 }

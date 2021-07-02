@@ -78,6 +78,25 @@ public class LinkedListService<T> {
 		return (T) n.data;
 	}
 	
+	public T popLast() {
+		T data = null;
+		if (head.next == null) {
+
+			data = (T) head.data;
+			head = null;
+			return data;
+		}
+		Node<T> temp = head;
+		Node<T> prev = null;
+		while (temp.next != null) {
+			prev = temp;
+			temp = temp.next;
+		}
+		data = (T) temp.data;
+		prev.next = null;
+		return data;
+	}
+	
 	void clearList()
     {
         head = null;
