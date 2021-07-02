@@ -12,4 +12,15 @@ public class StacksService<T>
 	{
 		linkedList.display();
 	}
+	public void peak()
+	{
+		System.out.println("Data at  "+ linkedList.head.data);
+
+	}
+	public void pop()
+	{
+		linkedList.pop();
+
+	}
+
 }
