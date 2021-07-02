@@ -12,7 +12,7 @@ public class LinkedListService<T> {
 		Node<T> node = new Node<T>(data);
 		if (head == null) {
 			head = node;
-			return;
+			return; 
 		}
 		else 
 		{
