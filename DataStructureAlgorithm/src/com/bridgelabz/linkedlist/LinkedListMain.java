@@ -1,10 +1,16 @@
 package com.bridgelabz.linkedlist;
 
-public class LinkedListMain {
+public class LinkedListMain<T> {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		LinkedListService<Integer> linkedListService = new LinkedListService<Integer>();
+		
+		linkedListService.add(70);
+		linkedListService.add(30);
+		linkedListService.add(56);
+		
+		linkedListService.display();
 	}
 
 }
