@@ -25,5 +25,15 @@ public class LinkedListMain<T> {
 		linkedListService.append(30);
 		linkedListService.append(70);
 		linkedListService.display();	
+		/*
+		 *In this method we are appending the given number 
+		 *to the specific position given by the user 
+		 */
+		System.out.println("\nAbility to add number in between");
+		linkedListService.append(56);
+		linkedListService.append(70);
+		
+		linkedListService.insertAt(7, 30);
+		linkedListService.display();
 	}
 }
