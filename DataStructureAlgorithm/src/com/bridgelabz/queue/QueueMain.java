@@ -10,7 +10,9 @@ public class QueueMain {
 		queueService.enqueue(40);
 		queueService.enqueue(20);
 		queueService.enqueue(50);
+		queueService.display();
 		
+		queueService.dequeue();
 		queueService.display();
 
 	}

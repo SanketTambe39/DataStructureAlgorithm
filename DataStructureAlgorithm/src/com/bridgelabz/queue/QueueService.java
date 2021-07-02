@@ -24,6 +24,20 @@ public class QueueService<T> {
 		}
 	}
 	
+	public void dequeue()
+	{
+		if(head == null)
+		{
+			System.out.println("Queue is empty");
+		}
+		else
+		{			
+			Queue<T> deletedNode = head;
+			head = head.next;
+			System.out.println("\nDeleted element "+deletedNode.data);
+		}
+	}
+	
 	public void display() {
 		Queue<T> temp = head;
 		while (temp != null) {
