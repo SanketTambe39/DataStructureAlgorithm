@@ -66,5 +66,15 @@ public class LinkedListMain<T> {
 		linkedListService.insertAt(linkedListService.index(30)+1, 40);
 		linkedListService.display();
 
+		System.out.println("\nDeleting 40 from the list and showing size.");
+		if(linkedListService.search(40))
+		{
+			linkedListService.pop(linkedListService.index(40));
+			System.out.println("Now the size of list is "+linkedListService.size());
+			linkedListService.display();
+		}
+		else {
+			System.out.println("Element is not present in list");
+		}
 	}
 }

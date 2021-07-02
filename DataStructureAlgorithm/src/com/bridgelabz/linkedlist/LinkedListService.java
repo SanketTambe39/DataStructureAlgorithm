@@ -1,9 +1,9 @@
 package com.bridgelabz.linkedlist;
 
-public class LinkedListService<T> {
+public class LinkedListService<T extends Comparable<T>> {
 
 	private Node<T> head;
-	
+
 	public void list() {
 		head = null;
 	}
@@ -77,7 +77,24 @@ public class LinkedListService<T> {
 		head = head.next;
 		return (T) n.data;
 	}
-	
+	public T pop(int pos) {
+		int index = 0;
+		Node<T> n = head;
+		if (pos == 0) {
+			head = head.next;
+
+			return (T) n.data;
+		}
+		Node<T> prev = null;
+		while (index != pos) {
+			prev = n;
+			n = n.next;
+			index++;
+		}
+		prev.next = n.next;
+
+		return (T) n.data;
+	}
 	public T popLast() {
 		T data = null;
 		if (head.next == null) {
@@ -124,5 +141,4 @@ public class LinkedListService<T> {
     {
         head = null;
     }
-	
 }
