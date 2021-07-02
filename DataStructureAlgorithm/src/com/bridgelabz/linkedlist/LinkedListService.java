@@ -96,7 +96,16 @@ public class LinkedListService<T> {
 		prev.next = null;
 		return data;
 	}
-	
+	public boolean search(T item) {
+		Node<T> temp = head;
+		while (temp != null) {
+			if (temp.data.equals(item)) {
+				return true;
+			}
+			temp = temp.next;
+		}
+		return false;
+	}
 	void clearList()
     {
         head = null;

@@ -48,5 +48,16 @@ public class LinkedListMain<T> {
 		linkedListService.append(70);
 		linkedListService.popLast();
 		linkedListService.display();
+		
+		System.out.println("\nFinding the element from the list");
+		if(linkedListService.search(30))
+		{
+			System.out.println("Element Found");
+		}
+		else
+		{
+			System.out.println("Element not found");
+		}
+
 	}
 }
