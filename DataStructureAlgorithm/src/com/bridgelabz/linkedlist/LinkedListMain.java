@@ -76,5 +76,12 @@ public class LinkedListMain<T> {
 		else {
 			System.out.println("Element is not present in list");
 		}
+		linkedListService.clearList();
+		System.out.println("\nOrdered Linked list");
+		linkedListService.addOrdered(56);
+		linkedListService.addOrdered(30);
+		linkedListService.addOrdered(40);
+		linkedListService.addOrdered(70);
+		linkedListService.display();
 	}
 }
