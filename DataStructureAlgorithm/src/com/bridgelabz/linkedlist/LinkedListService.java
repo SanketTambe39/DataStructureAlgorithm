@@ -72,4 +72,15 @@ public class LinkedListService<T> {
 		System.out.print(temp.data);
 	}
 	
+	public T popFirst() {
+		Node<T> n = head;
+		head = head.next;
+		return (T) n.data;
+	}
+	
+	void clearList()
+    {
+        head = null;
+    }
+	
 }

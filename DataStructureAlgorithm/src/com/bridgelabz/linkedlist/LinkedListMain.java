@@ -15,6 +15,7 @@ public class LinkedListMain<T> {
 		linkedListService.add(30);
 		linkedListService.add(56);
 		linkedListService.display();
+		linkedListService.clearList();
 		/*
 		 * here we can get the sequence i.e 56->30->70
 		 * add method is adding elements to the end side of linked
@@ -24,7 +25,8 @@ public class LinkedListMain<T> {
 		linkedListService.append(56);
 		linkedListService.append(30);
 		linkedListService.append(70);
-		linkedListService.display();	
+		linkedListService.display();
+		linkedListService.clearList();
 		/*
 		 *In this method we are appending the given number 
 		 *to the specific position given by the user 
@@ -32,8 +34,13 @@ public class LinkedListMain<T> {
 		System.out.println("\nAbility to add number in between");
 		linkedListService.append(56);
 		linkedListService.append(70);
-		
-		linkedListService.insertAt(7, 30);
+		linkedListService.insertAt(1, 30);
 		linkedListService.display();
+
+		System.out.println("\nDelete First element");
+		linkedListService.popFirst();
+		linkedListService.display();
+		
+
 	}
 }
